@@ -20,7 +20,7 @@ const Chat = () => {
     }, [])
 
     function connectToWs() {
-        const ws = new WebSocket('ws://localhost:4000')
+        const ws = new WebSocket('ws://dull-ruby-sheep-veil.cyclic.app')
         setWs(ws)
         ws.addEventListener("message", handleMessage)
         ws.addEventListener("close", () => {
